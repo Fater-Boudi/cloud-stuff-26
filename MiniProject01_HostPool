@@ -1,0 +1,25 @@
+This is the step-by-step documentation of the mini project for deploying host pool VMs for the company employees to use for their daily work.
+The following are the steps taken for the creation, deployment, checking, backup setup, and documenting of the virtual machines in the host pool.
+•	Into the Portal, as this is the first setup for the host pool, and although this can be created and deployed using ARM templates, I thought this setup will only take a few minutes, so I figured it is better to have more visibility.
+Into Host Pool > Create new one and then fill the required fields of:
+1.	Subscription & Resource Group
+2.	Name & Location
+3.	Preferred app group chosen is Desktop
+4.	Type chosen is Pooled so FSLogix can save and maintain users’ data.
+5.	Load balancing algorithm is Breadth-First meaning users to be signing to the VM with the least users.
+6.	Three VMs added to the same Resource Group and Location
+7.	Availability is setup to availability zone one.
+8.	Trusted launch virtual machine security type
+9.	Windows 11 Pro 24h2 image is chosen with the size of Standard D2as v5 with standard 64GB SSD storage.
+10.	 VMs registered to Intune.
+11.	 Created a specific Virtual Network where the VMs in the host pool are sitting in the same subnet.
+12.	 Created the Admin account for the host pool VMs and joined them to the local domain managed for the same tenant.
+13.	 Name tags setup and then to check and deploy the resource as required.
+
+We ensured that the virtual network and domain already setup and the admin user credentials used during the host pool creation.
+After the deployment is complete, we document the json file viewed for this resource for version control and future deployments.
+After creation, we test the virtual machine and start them one by one, to install the necessary software and agents required by the company.
+We check the Application Group, which we should have only one at this moment.
+It has this description: “Desktop Application Group created through the Hostpool Wizard”.
+
+
