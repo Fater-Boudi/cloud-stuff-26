@@ -1,0 +1,14 @@
+This big project is divided into mini projects, and this is the first one!
+The first steps to create the cloud native company:
+We purchase the company’s domain and register it on the registrar. In our case the registrar is GoDaddy, and we setup all the required protocols and addresses.
+•	We login to Azure and create a subscription. We follow the best method of management group, subscriptions, Resource Groups, Resources.
+•	We login to Microsoft 365 using the dedicated Microsoft account, and then to licensing.
+•	We purchase the required licenses, which are Entra ID P1 license for the Microsoft account, and Microsoft 365 E3 licenses for the users to be created and managed in Entra ID.
+•	After setting up the subscription, we head into Entra ID to setup the admin users and then add all employees as users, and in this we have to follow these requirements.
+•	The full list of data needed to create the users in their respected branches and departments can be exported as a csv file (Bulk create users) and provided to the HR staff in order to fill it.
+•	Using Azure Portal, we upload the csv file after ensuring all the required cells are filled properly.
+•	We create security groups as needed for granting access and since we already mentioned the department for each user, we create dynamic groups by setting the membership type to dynamic and to enable Entra roles to be assigned to the dynamic groups.
+•	We create custom roles for each user following the required RBAC blueprint set by the management team.
+All of this takes about one hour of work on Entra ID and Microsoft 365 portals.
+This is all setup for the current employees, but there is an automated process for onboarding new employees. This will be thoroughly explained in a later mini project.
+
