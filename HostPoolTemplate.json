@@ -1,0 +1,56 @@
+{
+    "apiVersion": "2026-01-01-preview",
+    "id": "/subscriptions/d2c8c337-694e-4c82-94cd-95c850b12dd9/resourceGroups/DomainTest1/providers/Microsoft.DesktopVirtualization/hostpools/PanAVD_HostPool01",
+    "name": "PanAVD_HostPool01",
+    "type": "microsoft.desktopvirtualization/hostpools",
+    "location": "eastus",
+    "tags": {},
+    "identity": {
+        "type": "None",
+        "tenantId": null,
+        "principalId": null
+    },
+    "properties": {
+        "allowRDPShortPathWithPrivateLink": "Disabled",
+        "deploymentScope": "Geographical",
+        "managedPrivateUDP": "Default",
+        "directUDP": "Default",
+        "publicUDP": "Default",
+        "relayUDP": "Default",
+        "appAttachPackageReferences": [],
+        "privateEndpointConnections": [],
+        "publicNetworkAccess": "Enabled",
+        "agentUpdate": null,
+        "friendlyName": null,
+        "description": "Created through the Azure Virtual Desktop extension",
+        "hostPoolType": "Pooled",
+        "personalDesktopAssignmentType": null,
+        "applicationGroupReferences": [
+            "/subscriptions/d2c8c337-694e-4c82-94cd-95c850b12dd9/resourcegroups/DomainTest1/providers/Microsoft.DesktopVirtualization/applicationgroups/PanAVD_HostPool01-DAG"
+        ],
+        "customRdpProperty": "drivestoredirect:s:;usbdevicestoredirect:s:;redirectclipboard:i:0;redirectprinters:i:0;audiomode:i:0;videoplaybackmode:i:1;devicestoredirect:s:*;redirectcomports:i:1;redirectsmartcards:i:1;enablecredsspsupport:i:1;redirectwebauthn:i:1;use multimon:i:1;",
+        "maxSessionLimit": 99999,
+        "loadBalancerType": "BreadthFirst",
+        "validationEnvironment": false,
+        "ring": 1,
+        "registrationInfo": null,
+        "vmTemplate": "{\"namePrefix\":\"PanAVD01\",\"hibernate\":false,\"osDiskType\":\"StandardSSD_LRS\",\"diskSizeGB\":64,\"securityType\":\"TrustedLaunch\",\"secureBoot\":true,\"vTPM\":true,\"vmInfrastructureType\":\"Cloud\",\"virtualProcessorCount\":null,\"memoryGB\":null,\"maximumMemoryGB\":null,\"minimumMemoryGB\":null,\"dynamicMemoryConfig\":false}",
+        "preferredAppGroupType": "Desktop",
+        "migrationRequest": null,
+        "cloudPcResource": false,
+        "startVMOnConnect": false,
+        "ssoadfsAuthority": null,
+        "ssoClientId": null,
+        "ssoClientSecretKeyVaultPath": null,
+        "ssoSecretType": null,
+        "objectId": "03473d3a-5b91-4a5a-8d33-4ae225004194"
+    },
+    "systemData": {
+        "createdBy": "fateriusboudi@gmail.com",
+        "createdByType": "User",
+        "createdAt": "2026-03-26T01:30:29.99Z",
+        "lastModifiedBy": "fateriusboudi@gmail.com",
+        "lastModifiedByType": "User",
+        "lastModifiedAt": "2026-03-26T01:30:29.99Z"
+    }
+}
